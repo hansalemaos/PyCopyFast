@@ -32,6 +32,6 @@ pip install PyCopyFast
 Make sure to call the cmd functions 
 
 (cmd_noexist_only, cmd_diff, cmd_update, cmd_force_copy, cmd_sync,
-cmd_move, cmd_delete) right before the XXXXrun()
+cmd_move, cmd_delete) right before the XXXXrun() function
 
 Otherwise, it might now work.
