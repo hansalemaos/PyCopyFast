@@ -10,7 +10,6 @@ pip install PyCopyFast
         pathfastcopy = r"C:\path\fcp.exe"
         path1 = "c:\\blabla"
         path2 = "c:\\blabla2"
-
         asz = (
             FastCopy(pathfastcopy)
             .force_close()
@@ -24,14 +23,12 @@ pip install PyCopyFast
             .cmd_diff(path1)
             .r_subprocess_run()
         )
-
         for xx in asz.stdout.decode("utf-8", "ignore").splitlines():
             print(xx)
 ```
 
-Make sure to call the cmd functions 
+## Make sure to call the cmd functions
 
-(cmd_noexist_only, cmd_diff, cmd_update, cmd_force_copy, cmd_sync,
-cmd_move, cmd_delete) right before the XXXXrun() function
+### (cmd_noexist_only, cmd_diff, cmd_update, cmd_force_copy, cmd_sync, cmd_move, cmd_delete) right before the XXXXrun() function
 
-Otherwise, it might now work.
+### Otherwise, it might now work.
